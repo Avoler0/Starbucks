@@ -1,0 +1,30 @@
+{
+  "name": "express_setting",
+  "version": "1.0.0",
+  "description": "NODE Express 사용을 위한 Node js Express 세팅",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ApostleB/express-setting.git"
+  },
+  "scripts": {
+    "dev": "nodemon --exec babel-node ./src/index.js"
+  },
+  "author": "ApostleB",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ApostleB/express-setting/issues"
+  },
+  "homepage": "https://github.com/ApostleB/express-setting#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "nodemon": "^2.0.15"
+  },
+  "type": "module"
+}
