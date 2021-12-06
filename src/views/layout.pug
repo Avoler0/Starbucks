@@ -1,0 +1,29 @@
+doctype html
+html(lang="ko")
+    head
+        meta(charset="UTF-8")
+        link(rel="stylesheet", href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css")
+        link(rel="stylesheet", href="/public/css/NoteStyle.css")
+        link(rel="stylesheet", href="/public/css/style.css")
+        //- link( rel="stylesheet" href="https://unpkg.com/mvp.css")
+
+        //백엔드에서 쏴주는 변수
+        title=pageTitle
+    body
+        header
+            a(href="/" class="logo-home") HOME
+            nav(class="nav")
+                ul(class="logo-home")
+                    li(class="nav-item")
+                        a(href="/") Home
+                    li(class="nav-item")
+                        a(href="/todo") Todo
+                    li(class="nav-item")
+                        a(href="/note") Note
+        main(id="home-main")
+            block content
+        footer 
+            a(href="#") 
+    script(src="/public/js/script.js")
+
+    
