@@ -5,17 +5,20 @@ block content
     div(class="LeftList")
       ul(class="List-Field")
         li(class="List-CreateNote")
-          a(href="#" onclick="ClickPlusNote();")
+          a(href="#" onclick="ClickPlusNote()")
             span + Note
+          a(href="#" onclick="")
 
 
         li(class="List-FileLabel")
           span MyNoteFile
 
         li(class="List-Note-Data")
-
+    div(class="Selection")
+      button(onclick="NoteSave()" value="버튼")
     div(class="Note-Edit-Field")
-        div(class="EditNote" contenteditable="true" onkeydown="KeyEvent(event)")
+      
+        //div(class="EditNote" contenteditable="true" onkeydown="KeyEvent(event)")
 
     
     script(src="/public/js/NoteScript.js")
