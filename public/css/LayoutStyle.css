@@ -24,7 +24,7 @@ h1.logo{
   height: 75px;
   z-index: 12;
 }
-h1.logo a{
+.sdown_gnb_wrap_inner h1.logo a, .sub_gnb_wrap_inner h1.logo a {
   background: url("./img/common/logo.png");
   display: block;
   height: 100%;
@@ -46,13 +46,16 @@ nav{
 }.sub_gnb_wrap_inner nav ul li
 {
   display: inline-block;
+  float: left;
+  text-align: center;
+  height: 20px;
 }
 .sub_gnb_wrap_inner nav.util_nav ul li a{
   color: #555;
-  display: inline-block;
-  width: auto;
-  height: 20px;
-  text-align: center;
+  display: block;
+  width: inherit;
+  height: inherit;
+  line-height: 20px;
   font: normal 13px Avenir, Arial, georgia;
 }
 
@@ -71,3 +74,157 @@ nav{
   margin-left: 1px;
   width: 97px;
 }
+
+@media screen and (min-width: 961px){
+.sdown_gnb_wrap_inner p.btn_search, .sub_gnb_wrap_inner p.btn_search {
+  height: 32px;
+  right: 54px;
+  top: 9px;
+  width: 32px;}
+}
+.sub_gnb_wrap_inner p.btn_search{
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 961px){
+.sdown_gnb_wrap_inner p.btn_search a, .sub_gnb_wrap_inner p.btn_search a {
+  height: 34px;
+  width: 34px;
+}
+}
+.sub_gnb_wrap_inner p.btn_search a{
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+@media screen and (min-width: 961px){
+.sdown_gnb_wrap_inner p.btn_search a img, .sub_gnb_wrap_inner p.btn_search a img {
+    right: 7px;
+    top: 6px;
+}
+}
+.sub_gnb_wrap_inner p.btn_search a img {
+  position: absolute;
+  z-index: 1;
+}
+
+@media screen and (min-width: 961px){
+.sdown_gnb_nav, .sub_gnb_nav {
+  height: 66px;
+  top: 54px;
+}
+}
+
+.sdown_gnb_nav, .sub_gnb_nav{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 11;
+}
+@media screen and (min-width: 961px){
+.sdown_gnb_nav_inner, .sub_gnb_nav_inner {
+  height: 66px;
+  width: 1100px;
+}}
+.sub_gnb_nav_inner {
+  margin: 0 auto;
+  z-index: 7;
+}
+@media screen and (min-width: 961px){
+.sdown_gnb_nav_inner > ul, .sub_gnb_nav_inner > ul {
+    float: right;
+}}
+@media screen and (min-width: 961px){
+.sdown_gnb_nav_inner > ul li, .sub_gnb_nav_inner > ul li {
+    float: left;
+}}
+@media screen and (min-width: 961px){
+.sdown_gnb_nav_inner > ul li.gnb_nav01, .sub_gnb_nav_inner > ul li.gnb_nav01 {
+  width: 89px;
+}}
+@media screen and (min-width: 961px){
+  .sdown_gnb_nav_inner > ul li.gnb_nav02, .sub_gnb_nav_inner > ul li.gnb_nav02 {
+    width: 73px;
+}}
+@media screen and (min-width: 961px){
+  .sdown_gnb_nav_inner > ul li.gnb_nav03, .sub_gnb_nav_inner > ul li.gnb_nav03 {
+    width: 79px;
+}}
+@media screen and (min-width: 961px){
+  .sdown_gnb_nav_inner > ul li.gnb_nav04, .sub_gnb_nav_inner > ul li.gnb_nav04 {
+    width: 153px;
+}}
+@media screen and (min-width: 961px){
+  .sdown_gnb_nav_inner > ul li.gnb_nav05, .sub_gnb_nav_inner > ul li.gnb_nav05 {
+    width: 225px;
+}}@media screen and (min-width: 961px){
+  .sdown_gnb_nav_inner > ul li.gnb_nav06, .sub_gnb_nav_inner > ul li.gnb_nav06 {
+    width: 131px;
+}}
+@media screen and (min-width: 961px){
+  .sub_gnb_nav_inner li {
+    height: 66px;
+}}
+.sub_gnb_nav_inner li{
+  display: inline;
+}
+.sub_gnb_nav_inner li h2{
+  color: #333;
+    display: block;
+    font: normal 13px Avenir, Arial, georgia;
+    text-align: center;
+    width: 100%;
+}
+@media screen and (min-width: 961px){
+.gnb_sub_wrap {
+    left: 0;
+    top: 66px;
+}}
+.gnb_sub_wrap {
+  background: #2C2A29;
+  position: absolute;
+  width: 100%;
+}
+@media screen and (min-width: 961px){
+.gnb_sub {
+  padding: 20px 0 20px 0;
+}}
+.gnb_sub {
+  display: inline-block;
+  width: 100%;
+}
+@media screen and (min-width: 961px){
+.gnb_sub_inner {
+    margin-left: -550px;
+    width: 1100px;
+}}
+.gnb_sub_inner {
+  left: 50%;
+  position: relative;
+}
+@media screen and (min-width: 961px){
+.gnb_sub_inner ul li {
+    padding: 3px0;
+}
+}
+@media screen and (min-width: 961px){
+.gnb_sub_inner ul li.gnb_sub_ttl a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+}}
+@media screen and (min-width: 961px){
+.gnb_sub_inner ul li {
+    padding: 3px0;
+}}
+@media screen and (min-width: 961px){
+  .gnb_sub_inner ul li a{
+      font-size: 12px;
+  }}

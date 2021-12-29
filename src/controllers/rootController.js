@@ -3,7 +3,7 @@ let todoList = ["1"];
 
 
 export const main = (req, res) => {
-    const pageTitle = "HOME";
+    const pageTitle = "Starbucks Coffee Korea";
   res.render("main",{ pageTitle });
 };
 /*

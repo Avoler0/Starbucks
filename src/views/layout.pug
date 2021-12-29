@@ -16,9 +16,9 @@ html(lang="ko")
           nav(class="util_nav")
             ul
               li(class="util_nav01 sign_out" style="display:none;")
-                a(href="/") Sign_out
+                a(href="/") Sign Out
               li(class="util_nav01 sign_in")
-                a(href="/") Sign_in
+                a(href="/") Sign In
               li(class="util_nav02" required="login" data-href="/my/index.do") 
                 a(href="/") My Starbucks
               li(class="util_nav03") 
@@ -27,10 +27,41 @@ html(lang="ko")
                 a(href="/") Find a Store
           p(class="btn_search")
             a(href ="/")
-              img(alt="통합검색" src="//icon_magnifier_black.png")
+              img(alt="통합검색" src="//image.istarbucks.co.kr/common/img/common/icon_magnifier_black.png")
+        nav(class="sub_gnb_nav")
+          div(class="sub_gnb_nav_inner")
+            ul
+              li(class="gnb_nav01")
+                h2
+                  a(href="/") COFFEE
+              div(class="gnb_sub_wrap" style="display:block;")
+                div(class="gnb_sub")
+                  div(class="gnb_sub_inner")
+                    ul
+                      li(class="gnb_sub_ttl")
+                        a(href="/") 커피
+                      li
+                          a(href="/") 스타벅스 원두
+                          
+              li(class="gnb_nav02")
+                h2
+                  a(href="/") MENU
+              li(class="gnb_nav03")
+                h2
+                  a(href="/") STORE
+              li(class="gnb_nav04")
+                h2
+                  a(href="/") RESPONSIBILTY
+              li(class="gnb_nav05")
+                h2
+                  a(href="/") STARBUCKS REWARDS
+              li(class="gnb_nav06")
+                h2
+                  a(href="/") WHAT'S NEW
+               
     block content
   footer 
     a(href="#") 
-    //script(src="/public/js/script.js")
+    script(src="/public/js/Layout.js")
 
     
