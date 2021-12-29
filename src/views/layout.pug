@@ -1,29 +1,36 @@
 doctype html
 html(lang="ko")
-    head
-        meta(charset="UTF-8")
-        link(rel="stylesheet", href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css")
-        link(rel="stylesheet", href="/public/css/NoteStyle.css")
-        link(rel="stylesheet", href="/public/css/style.css")
-        //- link( rel="stylesheet" href="https://unpkg.com/mvp.css")
-
-        //백엔드에서 쏴주는 변수
-        title=pageTitle
-    body
-        header
-            a(href="/" class="logo-home") HOME
-            nav(class="nav")
-                ul(class="logo-home")
-                    li(class="nav-item")
-                        a(href="/") Home
-                    li(class="nav-item")
-                        a(href="/todo") Todo
-                    li(class="nav-item")
-                        a(href="/note") Note
-        main(id="home-main")
-            block content
-        footer 
-            a(href="#") 
-    script(src="/public/js/script.js")
+  head
+    meta(charset="UTF-8")
+    link(rel="stylesheet", href="/public/css/CommonStyle.css")
+    link(rel="stylesheet", href="/public/css/LayoutStyle.css")
+    //- link( rel="stylesheet" href="https://unpkg.com/mvp.css")
+    //백엔드에서 쏴주는 변수
+    title=pageTitle
+  body
+    div(id="wrap")
+      div(class="sub_gnb_wrap")
+        div(class="sub_gnb_wrap_inner")
+          h1(class="logo")
+            a(href="/" title="스타벅스 메인 페이지" )
+          nav(class="util_nav")
+            ul
+              li(class="util_nav01 sign_out" style="display:none;")
+                a(href="/") Sign_out
+              li(class="util_nav01 sign_in")
+                a(href="/") Sign_in
+              li(class="util_nav02" required="login" data-href="/my/index.do") 
+                a(href="/") My Starbucks
+              li(class="util_nav03") 
+                a(href="/") Customer Service & Ideas
+              li(class="util_nav04") 
+                a(href="/") Find a Store
+          p(class="btn_search")
+            a(href ="/")
+              img(alt="통합검색" src="//icon_magnifier_black.png")
+    block content
+  footer 
+    a(href="#") 
+    //script(src="/public/js/script.js")
 
     
