@@ -130,12 +130,15 @@ nav{
 }
 @media screen and (min-width: 961px){
 .sdown_gnb_nav_inner, .sub_gnb_nav_inner {
-  height: 66px;
+  /*height: 66px;*/
   width: 1100px;
 }}
 .sub_gnb_nav_inner {
   margin: 0 auto;
   z-index: 7;
+}
+.sub_gnb_nav_inner > ul li{
+  height: 22px;
 }
 @media screen and (min-width: 961px){
 .sdown_gnb_nav_inner > ul, .sub_gnb_nav_inner > ul {
@@ -210,10 +213,28 @@ nav{
   position: relative;
 }
 @media screen and (min-width: 961px){
+.gnb_sub_inner ul {
+    width: 220px;
+}}
+.gnb_sub_inner ul{
+  float: left;
+}
+@media screen and (min-width: 961px){
+.gnb_sub_inner > ul li {
+    padding: 3px 0;
+}
+@media screen and (min-width: 961px){
+.sdown_gnb_nav_inner > ul li, .sub_gnb_nav_inner > ul li {
+    float: left;
+}}
 .gnb_sub_inner ul li {
-    padding: 3px0;
+  width: 100%;
 }
 }
+@media screen and (min-width: 961px){
+.gnb_sub_inner ul li.gnb_sub_ttl {
+    padding-bottom: 12px;
+}}
 @media screen and (min-width: 961px){
 .gnb_sub_inner ul li.gnb_sub_ttl a {
     color: #fff;
@@ -222,9 +243,62 @@ nav{
 }}
 @media screen and (min-width: 961px){
 .gnb_sub_inner ul li {
-    padding: 3px0;
+    padding: 3px 0;
 }}
 @media screen and (min-width: 961px){
   .gnb_sub_inner ul li a{
       font-size: 12px;
   }}
+.gnb_sub_inner > ul li a{
+  color: #999;
+}
+@media screen and (min-width: 961px){
+.gnb_sub_txbg {
+    padding: 5px 0 20px 0;
+}}
+.gnb_sub_txbg{
+  background: url(https://www.starbucks.co.kr/common/img/common/gnb_sub_txbg.jpg);
+  display: inline-block;
+  width: 100%;
+}
+@media screen and (min-width: 961px){
+.gnb_sub_tx_inner {
+    width: 1100px;
+}}
+.gnb_sub_tx_inner{
+  margin: 0 auto;
+}
+.gnb_sub_tx_inner:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+@media screen and (min-width: 961px){
+.gnb_sub_tx_left {
+    line-height: 18px;
+    width: 720px;
+}}
+.gnb_sub_tx_left{
+  float: left;
+}
+@media screen and (min-width: 961px){
+.gnb_sub_tx_left h3 {
+    margin-top: 25px;
+}}
+@media screen and (min-width: 961px){
+.gnb_sub_tx_left h3 a {
+    font-size: 12px;
+}}
+.gnb_sub_tx_left h3 a {
+  color: #999;
+}
+@media screen and (min-width: 961px){
+.gnb_sub_tx_left p.gnb_sub_ex_txt {
+    font-size: 12px;
+}}
+
+.gnb_sub_tx_left p.gnb_sub_ex_txt {
+  color: #64a70b;
+  float: left;
+  width: 100%;
+}
